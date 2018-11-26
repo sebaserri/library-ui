@@ -1,0 +1,21 @@
+<div class="card">
+  <div class="card-body">
+    <form (ngsubmit)="save()">
+      <div class="form-group">
+        <label class="col-md-4">Name</label>
+        <input type="text" class="form-control" id="name" required [(ngModel)]="author.name" name="name">
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Email</label>
+        <input type="email" class="form-control" id="name" required [(ngModel)]="author.email" name="name">
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Birth</label>
+        <input type="date" class="form-control" id="name" required [(ngModel)]="author.birth" name="birth">
+      </div>
+      <div class="form-group">
+        <button type="submit" (click)="save()" class="btn btn-primary">Create</button>
+      </div>
+    </form>
+  </div>
+</div>
